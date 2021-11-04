@@ -28,6 +28,9 @@ body {
     background-color: linear-gradient(-45deg, #ee7752, #e73c7e, #dae07e, #455de4);
     border-bottom: 1px solid #666;
 }
+#bar i, .nav-mobile {
+    display: none;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -244,7 +247,7 @@ p {
 .content {
     width: 100%;
     background-color: rgb(247, 246, 188);
-    margin: 50px auto 50px auto;
+    margin: 50px auto 0 auto;
 }
 .BigBang-Background {
     margin: 40px auto 30px auto;
@@ -295,9 +298,10 @@ p {
 
 /* footer */
 #foot {
+    background-color: #252525;
     padding: 50px 15px;
     text-align: center;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #252525;
 }
 .contain-footer {
     font-size: 26px;
@@ -309,7 +313,7 @@ p {
     color: rgb(4, 158, 230);
 }
 .copyright p {
-    color: #222;
+    color: #fff;
     font-weight: 300;
     font-size: 16px;
 }

@@ -85,31 +85,31 @@
     display: flex;
     height: 120px;
 }
+
 .contain-goal {
     transform: translate(40%, -65%)
 }
 #goal {
     width: 300px;
-    
 }
 .img-line img {
     width: 780px;
 }
-.interest-title {
+#arrow{
+    width: 80px;
+}
+#ball {
+    width: 70px;
+}
+.interest-ball {
     z-index: 5;
-    width: 90px;
-    height: 90px;
-    background-color: aliceblue;
     margin-top: 50px;
     padding: 35px 8px;
-    font-size: 14px;
-    border-radius: 100%;
     transition: transform 1.5s;
     cursor: pointer;
 }
-
-.interest-title:hover {
-    transform: translateX(300%);
+.interest-ball:hover {
+    transform: translateX(340%);
 }
 .interest-content {
     display: flex;

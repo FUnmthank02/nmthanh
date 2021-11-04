@@ -12,8 +12,73 @@
     .nav-items a{
         font-size: 0.5em;
     }
+    #bar i {
+        color: aliceblue;
+        font-size: 38px;
+        display: block;
+        margin: 3px;
+        cursor: pointer;
+    }
+    .overlay {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .header {
+        position: relative;
+        height: 44px;
+    }
+    .navbar {
+        margin: 0;
+    }
+    .nav-list {
+        display: none;
+    }
+    .nav-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 5;
+        width: 415px;
+        max-width: 100%;
+        transform: translateX(-100%);
+    }
+    .nav-mobile i {
+        font-size: 40px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: #666 ;
+        cursor: pointer;
+    }
+    .nav-mobile-list {
+        margin: 50px 10px;
+        list-style: none;
+        display: block;
+        color: #333;
+        padding: 8px 0;
+        font-size: 1.4rem;
+    }
+    .nav-input:checked ~ .overlay {
+        display: block;
+    }
+    .nav-input:checked ~ .nav-mobile {
+        transform: translateX(0%);
+        display: block;
+    }
+    .nav-m-item {
+        margin-top: 30px;
+    }
     .intro {
         /* height: 18.75em;     */
+        z-index: 2;
         height: 12.5em;
         margin: 0 0 1.5em 0;
         clip-path: ellipse(75% 77% at 50% 18%);
