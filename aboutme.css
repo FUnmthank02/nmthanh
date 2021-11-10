@@ -162,3 +162,63 @@
 .img-interest {
     margin-top: 150px;
 }
+@media only screen and (max-width: 740px) {
+    .header {
+        position: relative;
+        height: 130px;
+    }
+    #bar i {
+        color: aliceblue;
+        font-size: 120px;
+        display: block;
+        margin: 3px;
+        cursor: pointer;
+    }
+    .nav-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(255, 255, 255);
+        z-index: 6;
+        width: 940px;
+        max-width: 100%;
+        transform: translateX(-100%);
+    }
+    .nav-m-item {
+        margin-top: 80px;
+        margin-left: 15px;
+        font-size: 80px;
+    }
+    .nav-mobile i {
+        font-size: 80px;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        color: #666 ;
+        cursor: pointer;
+        z-index: 7;
+    }
+    #interest {
+        margin-left: 8.33333%;
+    }
+    .img-interest {
+        margin-top: 20px;
+    }
+    .img-football {
+        margin-left: 10px;
+        height: 200px;
+        width: 350px;
+    }
+    .img-football:hover {
+        transform: rotate(360deg) scale(1.1) translateY(25%) translateX(-15%);
+    }
+    .img-2 {
+        margin-left: 70px;
+        height: 220px;
+    }
+    .img-2:hover {
+        transform: rotateY(180deg);
+    }
+}
