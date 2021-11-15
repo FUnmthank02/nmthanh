@@ -67,9 +67,7 @@
 .img-sp:hover {
     transform: rotateY(180deg);
 }
-.img-add {
-    
-}
+
 
 /* interest */
 #interest {
@@ -97,6 +95,11 @@
 }
 #arrow{
     width: 80px;
+    transition: transform 1s;
+    cursor: pointer;
+}
+#arrow:hover {
+    transform: translate(-25%, -25%);
 }
 #ball {
     width: 70px;
@@ -127,7 +130,6 @@
     margin-bottom: 20px;
     color: rgb(158, 75, 236);
     display: inline-flex;
-    
 }
 #football {
     margin-right: 10px;
@@ -221,4 +223,26 @@
     .img-2:hover {
         transform: rotateY(180deg);
     }
+}
+
+/* footer */
+#foot {
+    background-color: #252525;
+    padding: 50px 15px;
+    text-align: center;
+    border-top: 1px solid #252525;
+}
+.contain-footer {
+    font-size: 26px;
+}   
+#foot .contain-footer a i{
+    color: rgb(23, 233, 163);
+}
+#foot .contain-footer a i:hover {
+    color: rgb(4, 158, 230);
+}
+.copyright p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
 }
