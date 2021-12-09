@@ -44,10 +44,11 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgb(255, 255, 255);
         z-index: 5;
-        width: 415px;
-        max-width: 100%;
+        /* width: 415px; */
+        /* max-width: 100%; */
+        width: 100%;
         transform: translateX(-100%);
     }
     .nav-mobile i {
