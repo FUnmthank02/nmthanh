@@ -105,7 +105,9 @@ body {
     font-size: 20px;
     position: relative;
 }
-
+#bar-icon {
+    display: none;
+}
 .btn_white {
     background-color: aliceblue;
     color: #222;
