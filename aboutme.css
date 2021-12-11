@@ -21,6 +21,7 @@
     position: relative;
     top: 100px;
 }
+
 .personal {
     
     border: 10px solid #fff;
@@ -164,6 +165,9 @@
 .img-interest {
     margin-top: 150px;
 }
+#bar-icon {
+    display: none;
+}
 @media only screen and (max-width: 740px) {
     body {
         overflow-x: hidden;
@@ -172,12 +176,23 @@
         position: relative;
         height: 130px;
     }
-    #bar i {
+    #bar-icon {
         color: aliceblue;
-        font-size: 120px;
         display: block;
-        margin: 3px;
+        font-size: 100px;
+        display: block;
+        margin: 10px;
         cursor: pointer;
+    }
+    #navmobile {
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 6;
+        transform: translateX(-100%);
     }
     .nav-mobile {
         position: fixed;
@@ -185,10 +200,8 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(224, 133, 133);
         z-index: 6;
-        /* width: 940px; */
-        /* max-width: 100%; */
         width: 100%;
         transform: translateX(-100%);
     }

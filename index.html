@@ -14,19 +14,18 @@
 <body>
     <header class="header">
         <div class="navbar">
-            <label for="input" id="bar"><i class="fas fa-bars"></i></label for="input">
-            <input type="checkbox" hidden name="" class="nav-input" id="input">
-            <label for="input" id="bar" class="overlay"></label>
-            <!-- nav-mobile -->
-            <div class="nav-mobile">
-                <label for="input"><i class="fas fa-times"></i></label>
-                <ul class="nav-mobile-list">
-                    <label for="input"><li class="nav-m-item"><a href="#">HOME</a></li></label>
-                    <label for="input"><li class="nav-m-item"><a href="#bigbang">BIGBANG</a></li></label>
-                    <label for="input"><li class="nav-m-item"><a href="AboutMe.html">ABOUT ME</a></li></label>
-                    <label for="input"><li class="nav-m-item"><a href="#foot">CONTACT</a></li></label>
-                </ul>
-            </div>
+            <div id="bar-icon"><i class="fas fa-bars"></i></div>
+                <!-- nav-mobile -->
+                
+                <div style="display: none;" id="navmobile" class="nav-mobile">
+                    <div id="close-icon"><i class="fas fa-times"></i></div>
+                    <ul class="nav-mobile-list">
+                        <li class="nav-m-item"><a href="#">HOME</a></li>
+                        <li class="nav-m-item"><a href="#bigbang">BIGBANG</a></li>
+                        <li class="nav-m-item"><a href="AboutMe.html">ABOUT ME</a></li>
+                        <li class="nav-m-item"><a href="#foot">CONTACT</a></li>
+                    </ul>
+                </div>
 
             <!-- nav-pc -->
             <ul class="nav-list">
@@ -205,7 +204,24 @@ function showSlides() {
                 <p>&#169; Powered by nmthanh2902</p>
             </div>
         </footer>
-
     </div>
+    
+    <script>
+        var btnIcon = document.getElementById('bar-icon');
+        var navbar = document.getElementById('navmobile');
+        var closeIcon = document.getElementById('close-icon');
+
+        function show() {
+        navbar.style.display = "block";
+        navbar.style.transform = "translateX(0%)";
+        }
+
+        function closebar() {
+        navbar.style.display = "none";
+        }
+
+        btnIcon.addEventListener('click', show);
+        closeIcon.addEventListener('click', closebar);
+    </script>
 </body>
 </html>

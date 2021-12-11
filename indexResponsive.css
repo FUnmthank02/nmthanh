@@ -12,22 +12,13 @@
     .nav-items a{
         font-size: 0.5em;
     }
-    #bar i {
+    /* #bar i {
         color: aliceblue;
         font-size: 38px;
         display: block;
         margin: 3px;
         cursor: pointer;
-    }
-    .overlay {
-        position: fixed;
-        display: none;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.3);
-    }
+    } */
     .header {
         position: relative;
         height: 44px;
@@ -51,6 +42,14 @@
         width: 100%;
         transform: translateX(-100%);
     }
+    #bar-icon {
+        color: aliceblue;
+        display: block;
+        font-size: 35px;
+        display: block;
+        margin: 5px;
+        cursor: pointer;
+    }
     .nav-mobile i {
         font-size: 40px;
         position: absolute;
@@ -67,13 +66,7 @@
         padding: 8px 0;
         font-size: 1.4rem;
     }
-    .nav-input:checked ~ .overlay {
-        display: block;
-    }
-    .nav-input:checked ~ .nav-mobile {
-        transform: translateX(0%);
-        display: block;
-    }
+    
     .nav-m-item {
         margin-top: 30px;
     }
