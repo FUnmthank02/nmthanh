@@ -395,6 +395,10 @@ p {
     .img-football {
         width: 250px;
     }
+    #foot {
+        width: 100%;
+        overflow-x: hidden;
+    }
     
 }
 
