@@ -25,8 +25,9 @@ body {
 }
 .header {
     width: 100%;
-    background-color: linear-gradient(-45deg, #ee7752, #e73c7e, #dae07e, #455de4);
+    background-color: lightblue;
     border-bottom: 1px solid #666;
+    border-top: 1px solid transparent;
 }
 #bar i, .nav-mobile {
     display: none;
